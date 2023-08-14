@@ -51,11 +51,11 @@ a {
   transition: 0.2s ease;
 }
 
-a:hover {
+.nav-links a:hover {
   color: gray;
 }
 
-a::after {
+.nav-links a::after {
   content: "";
   position: absolute;
   bottom: -0.4rem;
@@ -66,7 +66,7 @@ a::after {
   transition: 0.2s ease-in-out;
 }
 
-a:hover::after {
+.nav-links a:hover::after {
   width: 100%;
 }
 
@@ -123,3 +123,40 @@ a:hover::after {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
+
+.menu li {
+  list-style: none;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links a:hover {
+  color: gray;
+  transition: all 0.3s ease;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* SECTIONS */
